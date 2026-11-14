@@ -1,0 +1,78 @@
+.priceComparison{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #f3f6fb;
+    border-radius: 10px;
+    padding: 20px;
+
+    h2{
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    table{
+        width: 100%;
+        border: solid 2px #e9ecf2;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 10px;
+
+        
+        @media (max-width: 767px) {
+            /* phones */
+            
+        }
+
+        tr{
+            border: none;
+            height: 30px;
+            border: solid 2px #ecf0f5;
+
+            th{
+                text-align: left;
+                padding: 10px 20px;
+                background-color: #eaeff5;
+                font-size: 0.9rem;
+                font-weight: bold;
+
+                
+                @media (max-width: 767px) {
+                    /* phones */
+                    font-size: 0.6rem;
+                }
+
+            }
+
+            td{
+                width: 25%;
+                padding: 10px 20px;
+
+                @media (max-width: 767px) {
+                    /* phones */
+                    font-size: 0.5rem;
+                }
+            }
+        }
+
+        tbody {
+            tr:nth-child(even) td {
+                background-color: #e4f0fe;
+            }
+
+            tr:nth-child(odd) td {
+                background-color: #f9fbfa;
+            }
+        }
+    }
+
+    p{
+        font-size: 0.8rem;
+        margin-top: 10px;
+        color: var(--textColorBright);
+
+        @media (max-width: 767px) {
+            /* phones */
+            font-size: 0.6rem;
+        }
+    }
+}

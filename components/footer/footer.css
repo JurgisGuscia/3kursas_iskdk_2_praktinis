@@ -1,0 +1,331 @@
+.contentWrapper{
+    width: var(--baseWidth);
+    height: 100%;
+
+    @media (max-width: 767px) {
+        /* phones */
+        width: 100%;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        /* tables */
+        width: 100%;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        /* laptops */
+        width: 100%;
+    }
+
+    .footerTop{
+        border-bottom: solid 1px #182535;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 20px;
+
+        @media (max-width: 767px) {
+        /* phones */
+            flex-flow: row wrap;
+            height: auto;
+            padding: 20px 5px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            /* tables */
+            flex-flow: row wrap;
+            height: auto;
+            padding: 20px 5px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            /* laptops */
+            flex-flow: row wrap;
+            height: auto;
+            padding: 20px 5px;
+        }
+
+        .footerTopSection1{
+            height:100%;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            @media (max-width: 767px) {
+                /* phones */
+                width: 49%;
+            }
+
+            p{
+                color: var(--textColorBright);
+                font-size: 0.8rem;
+
+                @media (max-width: 767px) {
+                    /* phones */
+                    display: none;
+                }
+            }
+
+            .footerLogo{
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+                .footerLogoSpan{
+                    color: var(--blueAccent);
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+
+            .socialMediaLinks{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+                height: 30px;
+                margin-top: 20px;
+
+                a>img{
+                    width: 20px;
+                    height: 20px;
+                    filter: invert(100%);
+                }
+            }
+        }
+
+        .footerTopSection2{
+            height:100%;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 5px;
+
+            @media (max-width: 767px) {
+                /* phones */
+                width: 49%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                margin-bottom: 30px;
+            }
+
+            h3{
+                color: white;
+                font-size: 0.8rem;
+                margin-bottom: 8px;
+                
+            }
+
+            a{
+                color: var(--textColorBright);
+                text-decoration: none;
+                font-size: 0.8rem;
+                
+                @media (max-width: 767px) {
+                    /* phones */
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .footerTopSection3{
+            height:100%;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 5px;
+
+            h3{
+                color: white;
+                font-size: 0.8rem;
+                margin-bottom: 8px;
+            }
+
+            a{
+                color: var(--textColorBright);
+                text-decoration: none;
+                font-size: 0.8rem;
+            }
+
+            .footerContactsRow{
+                display: flex;
+                width: 100%;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                height: 20px;
+
+                img{
+                    width: 15px;
+                    height: 15px;
+                    filter: invert(100%);
+                }
+
+                .footerContactName{
+                    color: var(--textColorBright);
+                    font-size: 0.8rem;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .footerTopSection4{
+            height:100%;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 5px;
+
+            @media (max-width: 767px) {
+                /* phones */
+                width: 49%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                margin-bottom: 30px;
+            }
+
+            h3{
+                color: white;
+                font-size: 0.8rem;
+                margin-bottom: 8px;
+            }
+
+            .footerContactsRow2{
+                display: flex;
+                width: 100%;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                height: 20px;
+
+                @media (max-width: 767px) {
+                    /* phones */
+                    justify-content: flex-end;
+                }
+
+                img{
+                    width: 15px;
+                    height: 15px;
+                    filter: invert(100%);
+                }
+
+                .footerContactName2{
+                    color: var(--textColorBright);
+                    font-size: 0.8rem;
+                    margin-left: 5px;
+                    
+                    text-align: left;
+
+                    @media (max-width: 767px) {
+                        /* phones */
+                        align-items: flex-end;
+                        width: auto;
+                    }
+                }
+
+                .footerContactTime{
+                    color: var(--textColorBright);
+                    font-size: 0.8rem;
+                    margin-left: 5px;
+                    width: 20px;
+                    text-align: left;
+                    display: flex;
+                    justify-content: center;
+
+                    @media (max-width: 767px) {
+                        /* phones */
+                        text-align: right;
+                    }
+                    
+                }
+            }
+        }
+
+       
+
+    }
+
+    .footerBot{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 10px;
+
+       @media (max-width: 767px) {
+        /* phones */
+            padding: 0px 5px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            /* tables */
+            padding: 0px 5px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            /* laptops */
+            padding: 0px 5px;
+        }
+
+        .footerBotLeft{
+            height: 100%;
+            width: 300px;
+            color: var(--textColorBright);
+            font-size: 0.7rem;
+            display: flex;
+            align-items: center;
+            
+            @media (max-width: 767px) {
+                /* phones */
+                width: auto;
+            }
+        }
+
+        .footerBotRight{
+            height: 100%;
+            width: 400px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: center;
+
+
+            @media (max-width: 767px) {
+                /* phones */
+                width: auto;
+            }
+
+            .footerBotRightLinkWrapper{
+                width: 150px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+                    color: var(--textColorBright);
+                    font-size: 0.7rem;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
